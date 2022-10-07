@@ -3,14 +3,13 @@
   $.fn.icast = function (options) {
         var settings = $.extend({
             // Default Settings
-            URL: "https://cast.server89.com:8010",
             version: "2",
             stream_id: 1,
             mount_point: "/radio.mp3", //For Icecast server
             type: "/;type=mp3",
             streampath: "/stream",
             cors: "https://cors.server89.com/cors",
-            titoli:"sp3.server89.com:8024",
+            titoli:"cast.server89.com:8010",
             logo: "",
             servertitle: "The Voice Friend", //For Shoutcast v2 server
             show_listeners: true,
