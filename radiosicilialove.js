@@ -9,7 +9,7 @@
             type: "/;type=mp3",
             streampath: "/stream",
             cors: "https://cors.server89.com/cors",
-            titoli:"cast.server89.com:8010",
+            titoli:"cast3.server89.com:8010",
             logo: "",
             servertitle: "The Voice Friend", //For Shoutcast v2 server
             show_listeners: true,
@@ -492,6 +492,6 @@ $(".listeners", thisObj).text(result.split(",")[0]);
 })(jQuery);
 
 $("#stream1").icast({
-  URL: "https://cast.server89.com:8010",
+  URL: "https://cast3.server89.com:8010",
 version: "icecast",
 })
