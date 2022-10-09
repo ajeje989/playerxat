@@ -493,5 +493,5 @@ $(".listeners", thisObj).text(result.split(",")[0]);
 
 $("#stream1").icast({
   URL: "https://cast3.server89.com:8020",
-version: "2",
+version: "icecast",
 })
