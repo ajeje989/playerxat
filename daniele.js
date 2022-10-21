@@ -498,7 +498,7 @@ version: "2",
 
  $(document).ready(function() {
                        	try {
-                       		$('.aghettoacqua').ripples({
+                       		$('.dmjserv').ripples({
                        			resolution: 300,
                        			perturbance: 0.03
                        		});
