@@ -10,8 +10,8 @@
             streampath: "/stream",
             cors: "https://cors.server89.com/cors",
             titoli:"cast3.server89.com:8010",
-            logo: "",
-            servertitle: "The Voice Friend", //For Shoutcast v2 server
+            logo: "https://i.imgur.com/sgYbiAp.png",
+            servertitle: "Radio Dimensione Luna", //For Shoutcast v2 server
             show_listeners: true,
             src: "",
             volume: 0.95,
