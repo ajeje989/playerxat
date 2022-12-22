@@ -9,7 +9,7 @@
             type: "/;type=mp3",
             streampath: "/stream",
             cors: "https://cors.server89.com/cors",
-            titoli:"sp1.server89.com:8090",
+            titoli:"cast2.server89.com:8050",
             logo: "",
             servertitle: "Radio Sogno e Realta'", //For Shoutcast v2 server
             show_listeners: true,
@@ -492,6 +492,6 @@ $(".listeners", thisObj).text(result.split(",")[0]);
 })(jQuery);
 
 $("#stream1").icast({
-  URL: "https://sp1.server89.com:7016",
-version: "2",
+  URL: "https://cast2.server89.com:8050",
+version: "icecast",
 })
