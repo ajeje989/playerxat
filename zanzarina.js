@@ -9,7 +9,7 @@
             type: "/;type=mp3",
             streampath: "/stream",
             cors: "https://cors.server89.com/cors",
-            titoli:"sp1.server89.com:8078",
+            titoli:"cast3.server89.com:8250",
             logo: "",
             servertitle: "Napoli prima e dopo live", //For Shoutcast v2 server
             show_listeners: true,
@@ -492,6 +492,6 @@ $(".listeners", thisObj).text(result.split(",")[0]);
 })(jQuery);
 
 $("#stream1").icast({
-  URL: "https://sp1.server89.com:7019",
-version: "2",
+  URL: "https://cast3.server89.com:8250",
+version: "icecast",
 })
