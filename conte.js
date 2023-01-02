@@ -270,7 +270,7 @@
 
            function getCoverH(artist, title, cb, i) {
                artist, title = [encodeURI(formatArtist(artist)), encodeURI(formatTitle(title))];
-               $.getJSON( "https://cors.server89.com/cors/https://server89.com/dati/listadj.json", data => {
+               $.getJSON( "https://cors.server89.com/cors/server89.com/dati/listadj.json", data => {
                    if(!i){ //CAMBIARE COVER QUA
                        for(let dj in data){
                            if(artist.includes(dj))return setCover(data[dj]);
@@ -367,26 +367,26 @@ $(".listeners", thisObj).text(result.split(",")[0]);
                     url: url,
                     success:
                         function(data) {
-                            var result = findMPData(data);
-                            if (result.title != getTag()) {
-                                updateTag(result.title);
-                    var songtitle = result.title;
-                                var songtitleSplit = songtitle.split('-');
-                                var artist = songtitleSplit[0];
-                                var title = songtitleSplit[1];
-                                updateArtist(artist);
-                                updateTitle(title);
-                    getCover(artist, title);
-                                updateServerInfoIC(result);
-                updateHistoryIC(artist, title);
-                FBShare(result);
-                TWShare3(result);
+                          var result = findMPData(data);
+                              if (result.title != getTag() || true) {
+                                 updateTag(result.yp_currently_playing);
+                     var songtitle = result.yp_currently_playing;
+                                   var songtitleSplit = songtitle.split('-');
+                                   var artist = songtitleSplit[0];
+                                   var title = songtitleSplit[1];
+                                   updateArtist(artist);
+                                   updateTitle(title);
+                       getCover(artist, title);
+                                   updateServerInfoIC(result);
+                   updateHistoryIC(artist, title);
+                   FBShare(result);
+                   TWShare3(result);
                             }
                         }
                    })
                 }
           foo();
-            setInterval(foo, 12000);
+            setInterval(foo, 22000);
       }
         }
 
@@ -408,9 +408,11 @@ $(".listeners", thisObj).text(result.split(",")[0]);
         }
 
     function updateServerInfoIC(data) {
+
     $(".servertitle", thisObj).text(settings.servertitle);
-      $(".listeners", thisObj).text(data.listeners);
+       $(".listeners", thisObj).text(6+Number(data.listeners));
         }
+
 
     function updateHistoryIC(artist, title) {
             addToArray(artist, title);
