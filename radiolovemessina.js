@@ -10,7 +10,7 @@
             streampath: "/stream",
             cors: "https://cors.server89.com/cors",
             titoli:"sp3.server89.com:8034",
-            logo: "https://i.imgur.com/9HLK3uq.png",
+            logo: "https://i.imgur.com/9wDQhxs.png",
           	servertitle: "Radio Love Messina",
             show_listeners: true,
             src: "",
