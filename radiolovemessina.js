@@ -8,6 +8,7 @@
             mount_point: "/radio.mp3", //For Icecast server
             type: "/;type=mp3",
             streampath: "/stream",
+            cors: "https://cors.server89.com/cors",
             titoli:"sp3.server89.com:8034",
             logo: "https://i.imgur.com/9HLK3uq.png",
           	servertitle: "Radio Love Messina",
