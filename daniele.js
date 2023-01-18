@@ -9,7 +9,7 @@
             type: "/;type=mp3",
             streampath: "/stream",
             cors: "https://cors.server89.com/cors",
-            titoli:"sp1.server89.com:8044",
+            titoli:"sp3.server89.com:8066",
             logo: "",
             servertitle: "Radio Napoli Dance", //For Shoutcast v2 server
             show_listeners: true,
@@ -492,7 +492,7 @@ $(".listeners", thisObj).text(result.split(",")[0]);
 })(jQuery);
 
 $("#stream1").icast({
-  URL: "https://sp1.server89.com:7007",
+  URL: "https://sp3.server89.com:7053",
 version: "2",
 })
 
