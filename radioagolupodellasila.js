@@ -11,7 +11,7 @@
             cors: "https://cors.server89.com/cors",
             titoli:"cast3.server89.com:8250",
             logo: "",
-            servertitle: "Napoli prima e dopo live", //For Shoutcast v2 server
+            servertitle: "Radio Cuore di Napoli", //For Shoutcast v2 server
             show_listeners: true,
             src: "",
             volume: 0.95,
