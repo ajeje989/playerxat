@@ -9,9 +9,9 @@
             type: "/;type=mp3",
             streampath: "/stream",
             cors: "https://cors.server89.com/cors",
-            titoli:"sp1.server89.com:8074",
+            titoli:"cast3.server89.com:8250",
             logo: "",
-            servertitle: "Radio Ago Lupo della Sila", //For Shoutcast v2 server
+            servertitle: "Napoli prima e dopo live", //For Shoutcast v2 server
             show_listeners: true,
             src: "",
             volume: 0.95,
@@ -270,7 +270,7 @@
 
            function getCoverH(artist, title, cb, i) {
                artist, title = [encodeURI(formatArtist(artist)), encodeURI(formatTitle(title))];
-               $.getJSON( "https://cors.server89.com/cors/https://server89.com/dati/listadj.json", data => {
+               $.getJSON( "https://cors.server89.com/cors/server89.com/dati/listadj.json", data => {
                    if(!i){ //CAMBIARE COVER QUA
                        for(let dj in data){
                            if(artist.includes(dj))return setCover(data[dj]);
@@ -367,26 +367,26 @@ $(".listeners", thisObj).text(result.split(",")[0]);
                     url: url,
                     success:
                         function(data) {
-                            var result = findMPData(data);
-                            if (result.title != getTag()) {
-                                updateTag(result.title);
-                    var songtitle = result.title;
-                                var songtitleSplit = songtitle.split('-');
-                                var artist = songtitleSplit[0];
-                                var title = songtitleSplit[1];
-                                updateArtist(artist);
-                                updateTitle(title);
-                    getCover(artist, title);
-                                updateServerInfoIC(result);
-                updateHistoryIC(artist, title);
-                FBShare(result);
-                TWShare3(result);
+                          var result = findMPData(data);
+                              if (result.title != getTag() || true) {
+                                 updateTag(result.yp_currently_playing);
+                     var songtitle = result.yp_currently_playing;
+                                   var songtitleSplit = songtitle.split('-');
+                                   var artist = songtitleSplit[0];
+                                   var title = songtitleSplit[1];
+                                   updateArtist(artist);
+                                   updateTitle(title);
+                       getCover(artist, title);
+                                   updateServerInfoIC(result);
+                   updateHistoryIC(artist, title);
+                   FBShare(result);
+                   TWShare3(result);
                             }
                         }
                    })
                 }
           foo();
-            setInterval(foo, 12000);
+            setInterval(foo, 22000);
       }
         }
 
@@ -408,9 +408,11 @@ $(".listeners", thisObj).text(result.split(",")[0]);
         }
 
     function updateServerInfoIC(data) {
+
     $(".servertitle", thisObj).text(settings.servertitle);
-      $(".listeners", thisObj).text(data.listeners);
+       $(".listeners", thisObj).text(8+Number(data.listeners));
         }
+
 
     function updateHistoryIC(artist, title) {
             addToArray(artist, title);
@@ -492,6 +494,6 @@ $(".listeners", thisObj).text(result.split(",")[0]);
 })(jQuery);
 
 $("#stream1").icast({
-  URL: "https://sp1.server89.com:7006",
-version: "2",
+  URL: "https://cast3.server89.com:8250",
+version: "icecast",
 })
