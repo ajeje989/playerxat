@@ -9,7 +9,7 @@
             type: "/;type=mp3",
             streampath: "/stream",
             cors: "https://cors.server89.com/cors",
-            titoli:"sp1.server89.com:8076",
+            titoli:"sp1.server89.com:8036",
             logo: "https://i.imgur.com/WyXl5LP.jpg",
           	servertitle: "radio maradona web1",
             show_listeners: true,
@@ -492,6 +492,6 @@ $(".listeners", thisObj).text(result.split(",")[0]);
 })(jQuery);
 
 $("#stream1").icast({
-  URL: "https://sp1.server89.com:7001",
+  URL: "https://sp1.server89.com:7010",
 version: "2",
 })
