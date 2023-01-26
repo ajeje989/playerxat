@@ -10,7 +10,7 @@
             streampath: "/stream",
             cors: "https://cors.server89.com/cors",
             titoli:"cast3.server89.com:8010",
-            logo: "https://i.imgur.com/WAPwcay.png",
+            logo: "",
             servertitle: "RADIO DIMENSIONE LUNA", //For Shoutcast v2 server
             show_listeners: true,
             src: "",
