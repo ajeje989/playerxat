@@ -270,7 +270,7 @@
 
            function getCoverH(artist, title, cb, i) {
                artist, title = [encodeURI(formatArtist(artist)), encodeURI(formatTitle(title))];
-               $.getJSON( "https://cors.server89.com/cors/https://server89.com/dati/listadj.json", data => {
+               $.getJSON( "https://cors.server89.com/cors/server89.com/dati/listadj.json", data => {
                    if(!i){ //CAMBIARE COVER QUA
                        for(let dj in data){
                            if(artist.includes(dj))return setCover(data[dj]);
