@@ -11,7 +11,7 @@
             cors: "https://cors.server89.com/cors",
             titoli:"sp1.server89.com:8048",
             logo: "",
-            servertitle: "RADIO BELLISSIMA WEB", //For Shoutcast v2 server
+            servertitle: "RADIO WJ BELLISSIMA WEB", //For Shoutcast v2 server
             show_listeners: true,
             src: "",
             volume: 0.95,
