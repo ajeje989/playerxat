@@ -410,7 +410,7 @@ $(".listeners", thisObj).text(result.split(",")[0]);
     function updateServerInfoIC(data) {
 
     $(".servertitle", thisObj).text(settings.servertitle);
-       $(".listeners", thisObj).text(8+Number(data.listeners));
+       $(".listeners", thisObj).text(20+Number(data.listeners));
         }
 
 
