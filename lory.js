@@ -311,7 +311,8 @@
 
 						 else if(settings.version == 2) {
 							 $(".servertitle", thisObj).text(settings.servertitle);
-			 $(".listeners", thisObj).text(10+Number(result.split(",")[0]))
+			// $(".listeners", thisObj).text(10+Number(result.split(",")[0]))
+							 $(".listeners", thisObj).text(result.split(",")[0]);
 						 }
 					 }
 
