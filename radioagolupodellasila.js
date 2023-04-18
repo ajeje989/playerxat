@@ -9,7 +9,7 @@
             type: "/;type=mp3",
             streampath: "/stream",
             cors: "https://cors.server89.com/cors",
-            titoli:"cast3.server89.com:8250",
+            titoli:"cast2.server89.com/radio/8050/",
             logo: "",
             servertitle: "Radio Cuore di Napoli", //For Shoutcast v2 server
             show_listeners: true,
@@ -494,6 +494,6 @@ $(".listeners", thisObj).text(result.split(",")[0]);
 })(jQuery);
 
 $("#stream1").icast({
-  URL: "https://cast3.server89.com:8250",
+   URL: "https://cast2.server89.com:8050",
 version: "icecast",
 })
